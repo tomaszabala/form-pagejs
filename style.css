@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    /* Elimina el margen predeterminado del body */
+    font-family: Arial, sans-serif;
+    /* Define una fuente */
+}
+
+.background-image {
+    position: fixed;
+    /* Fija la imagen en el fondo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Coloca la imagen detrás del contenido */
+    opacity: 0.8;
+}
