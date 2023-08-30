@@ -1,29 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Punto Picada</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('hPZZbA5-7P0xXrzkr');
-        })();
-    </script>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div class="background-image"></div>
-
-
-    <form class="form" method="post" id="contact-form">
-        <p class="title">Punto picada </p>
-        <p class="message">Por favor complete los datos. </p>
-        <div>
+{/* <div class="container mt-5">
+        <div class="d-flex">
+            <h1 class="mb-4">Punto Picada</h1>
+            <img src="" alt="">
+        </div>
+        <form method="post" id="contact-form">
             <div class="form-group">
                 <label for="from_name" id="from_name"><b>Nombre *</b></label>
                 <input type="text" class="form-control" name="from_name" id="from_name">
@@ -41,21 +21,17 @@
                 <select name="user_service" id="user_service" class="form-control">
                     <option value="X">seleccione una opción:</option>
                     <option value="Delivery">Delivery</option>
-                    <option value="Recepciones">Recepciones</option>
-                    <option value="Recepción y plato principal">Recepción y plato principal</option>
                     <option value="Servicio completo">Servicio completo</option>
-                    <option value="Otro">Otro</option>
+                    <option value="Armado de mesa">Armado de mesa</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="user_event"><b> Tipo de evento</b></label>
                 <select name="user_event" id="user_event" class="form-control">
                     <option value="X">seleccione una opción:</option>
-                    <option value="Cumpleaños">Cumpleaños</option>
-                    <option value="Casamiento">Casamiento</option>
+                    <option value="Social">Social</option>
                     <option value="Corporativo">Corporativo</option>
                     <option value="Religioso">Religioso</option>
-                    <option value="Otro">Otro</option>
                 </select>
             </div>
             <div class="form-group">
@@ -100,9 +76,5 @@
                 <textarea name="user_message" id="user_message" class="form-control" cols="100" rows="2"></textarea>
             </div>
             <button type="submit" class="btn btn-primary mt-3" id="btn-submit">Enviar</button>
-    </form>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="app.js"></script>
-</body>
-
-</html>
+        </form>
+    </div> */}
