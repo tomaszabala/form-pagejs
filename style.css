@@ -255,3 +255,12 @@ body {
   .instagram:hover svg {
     fill: #c13584;
   }
+
+  @media (max-width: 576px) {
+   body{
+    height: 100%;
+   }
+   form{
+    border-radius: 0px !important;
+   }
+  }
