@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Punto Picada</title>
+    <meta name="description"
+        content="Punto Picada ofrece servicios de catering de alta calidad. Contacta con nosotros para eventos de cumpleaños, bodas, eventos corporativos y más.">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -13,17 +15,18 @@
             emailjs.init('hPZZbA5-7P0xXrzkr');
         })();
     </script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="background-image"></div>
-    <div class="container d-flex justify-content-center align-items-center fluid p-0 m-0">
+    <div class="container d-flex justify-content-center align-items-center fluid p-0 m-0" id="contenedorFormulario">
         <!-- FORM -->
         <form class="form" method="post" id="contact-form">
 
             <div class="row">
-                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-1">
+                <div class="col-xl-5 col-lg-5 col-md-5 ">
                     <div class="container ">
                         <div>
                             <p class="title">Punto Picada </p>
@@ -38,27 +41,8 @@
                         <div class="d-flex flex-column ">
                             <h5>Redes sociales</h5>
                             <div class="social-buttons d-flex">
-                                <!-- <a href="#" class="social-button github">
-                                        <svg class="cf-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="-2.5 0 19 19">
-                                            <path
-                                                d="M9.464 17.178a4.506 4.506 0 0 1-2.013.317 4.29 4.29 0 0 1-2.007-.317.746.746 0 0 1-.277-.587c0-.22-.008-.798-.012-1.567-2.564.557-3.105-1.236-3.105-1.236a2.44 2.44 0 0 0-1.024-1.348c-.836-.572.063-.56.063-.56a1.937 1.937 0 0 1 1.412.95 1.962 1.962 0 0 0 2.682.765 1.971 1.971 0 0 1 .586-1.233c-2.046-.232-4.198-1.023-4.198-4.554a3.566 3.566 0 0 1 .948-2.474 3.313 3.313 0 0 1 .091-2.438s.773-.248 2.534.945a8.727 8.727 0 0 1 4.615 0c1.76-1.193 2.532-.945 2.532-.945a3.31 3.31 0 0 1 .092 2.438 3.562 3.562 0 0 1 .947 2.474c0 3.54-2.155 4.32-4.208 4.548a2.195 2.195 0 0 1 .625 1.706c0 1.232-.011 2.227-.011 2.529a.694.694 0 0 1-.272.587z">
-                                            </path>
-                                        </svg>
-                                    </a> -->
-                                <!-- <a href="#" class="social-button linkedin">
-                                        <svg viewBox="0 -2 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <g id="Icons" stroke="none" stroke-width="1">
-                                                <g transform="translate(-702.000000, -265.000000)">
-                                                    <path
-                                                        d="M746,305 L736.2754,305 L736.2754,290.9384 C736.2754,287.257796 734.754233,284.74515 731.409219,284.74515 C728.850659,284.74515 727.427799,286.440738 726.765522,288.074854 C726.517168,288.661395 726.555974,289.478453 726.555974,290.295511 L726.555974,305 L716.921919,305 C716.921919,305 717.046096,280.091247 716.921919,277.827047 L726.555974,277.827047 L726.555974,282.091631 C727.125118,280.226996 730.203669,277.565794 735.116416,277.565794 C741.21143,277.565794 746,281.474355 746,289.890824 L746,305 L746,305 Z M707.17921,274.428187 L707.117121,274.428187 C704.0127,274.428187 702,272.350964 702,269.717936 C702,267.033681 704.072201,265 707.238711,265 C710.402634,265 712.348071,267.028559 712.41016,269.710252 C712.41016,272.34328 710.402634,274.428187 707.17921,274.428187 L707.17921,274.428187 L707.17921,274.428187 Z M703.109831,277.827047 L711.685795,277.827047 L711.685795,305 L703.109831,305 L703.109831,277.827047 L703.109831,277.827047 Z"
-                                                        id="LinkedIn">
-                                                    </path>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                    </a> -->
-                                <a href="#" class="social-button whatsapp">
+                                <a href="https://api.whatsapp.com/message/UQTUPH2ZSUQPP1?autoload=1&app_absent=0"
+                                    class="social-button whatsapp">
                                     <svg viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -80,20 +64,8 @@
                                         </g>
                                     </svg>
                                 </a>
-                                <a href="#" class="social-button facebook">
-                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310"
-                                        xml:space="preserve">
-                                        <g id="XMLID_834_">
-                                            <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
-                                  c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
-                                  V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
-                                  C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
-                                  c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"></path>
-                                        </g>
-                                    </svg>
-                                </a>
-                                <a href="#" class="social-button instagram">
+
+                                <a href="https://www.instagram.com/punto.picada/" class="social-button instagram">
                                     <svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <g id="Page-1" stroke="none" stroke-width="1">
@@ -115,23 +87,24 @@
                     </div>
                 </div>
 
-                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-11 d-flex flex-column">
-                    <div class="form-group">
+                <div class="col-xl-7 col-lg-7 col-md-7  d-flex flex-column">
+                    <div class="form-group mt-1 mb-1">
                         <label for="from_name" id="from_name"><b>Nombre</b></label>
                         <input type="text" class="form-control" name="from_name" id="from_name">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group mt-1 mb-1">
                         <label for="user_email"><b>Email</b> </label>
                         <input type="email" class="form-control" name="user_email" id="user_email">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group mt-1 mb-1">
                         <label for="user_phone"><b>Teléfono</b> </label>
                         <input type="number" class="form-control" name="user_phone" id="user_phone">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group mt-1 mb-1">
                         <label for="user_service"><b>Tipo de servicio</b> </label>
                         <select name="user_service" id="user_service" class="form-control">
-                            <option value="X">seleccione una opción:</option>
+                            <option value="X">Seleccione una opción</option>
+                            <option disabled>----------------</option>
                             <option value="Delivery">Delivery</option>
                             <option value="Recepciones">Recepciones</option>
                             <option value="Recepción y plato principal">Recepción y plato principal</option>
@@ -139,10 +112,11 @@
                             <option value="Otro">Otro</option>
                         </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group mt-1 mb-1">
                         <label for="user_event"><b> Tipo de evento</b></label>
                         <select name="user_event" id="user_event" class="form-control">
-                            <option value="X">seleccione una opción:</option>
+                            <option value="X">Seleccione una opción</option>
+                            <option disabled>----------------</option>
                             <option value="Cumpleaños">Cumpleaños</option>
                             <option value="Casamiento">Casamiento</option>
                             <option value="Corporativo">Corporativo</option>
@@ -150,18 +124,19 @@
                             <option value="Otro">Otro</option>
                         </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group mt-1 mb-1">
                         <label for="cantidadpersonas"><b>Cantidad de invitados</b> </label>
                         <input type="number" class="form-control" name="cantidadpersonas" id="cantidadpersonas">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group mt-1 mb-1">
                         <label for="user_eventDay"><b>Fecha del evento</b> </label>
                         <input type="date" class="form-control" name="user_eventDay" id="user_eventDay">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group mt-1 mb-1">
                         <label for="user_location"><b>Localidad</b> </label>
                         <select name="user_location" id="user_location" class="form-control">
-                            <option value="X">seleccione una opción:</option>
+                            <option value="X">Seleccione una opción</option>
+                            <option disabled>----------------</option>
                             <option value="Nordelta">Nordelta</option>
                             <option value="GBA Norte">GBA Norte</option>
                             <option value="GBA Sur">GBA Sur</option>
@@ -169,8 +144,8 @@
                             <option value="CABA">CABA</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label for="user_restriccion"><b>Restricciones:</b> </label>
+                    <div class="form-group mt-1 mb-1">
+                        <label for="user_restriccion"><b>Restricciones</b> </label>
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" name="user_restriccion1"
                                 id="user_restriccion1" value="Lácteo">
@@ -187,27 +162,56 @@
                             <label class="form-check-label" for="user_restriccion3">Gluten free</label>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="user_message"><b>Comentarios:</b></label>
+                    <div class="form-group mt-1 mb-1">
+                        <label for="user_message"><b>Comentarios</b></label>
                         <textarea name="user_message" id="user_message" class="form-control" cols="100"
                             rows="2"></textarea>
                     </div>
                     <div class="d-flex justify-content-end">
-                        <button type="submit" class="btn btn-primary mt-3 justify-content-end"
+                        <button type="submit" class="btn btn-success mt-3 justify-content-end"
                             id="btn-submit">Enviar</button>
                     </div>
                 </div>
             </div>
         </form>
     </div>
-    <!-- SOCIAL -->
+    <!-- TOGGLE -->
+    <div class="notifications-container d-none" id="enviadoMsj" style="height: 100vh">
+        <div class="success">
+            <div class="flex">
+                <div class="flex-shrink-0">
 
-
-
-
+                    <svg class="succes-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                        aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <div class="success-prompt-wrap">
+                    <p class="success-prompt-heading">Mensaje de Confirmación
+                    </p>
+                    <div class="success-prompt-prompt">
+                        <p>Gracias por confiar en Punto Picada. Tu solicitud ha sido enviada con éxito.</p>
+                    </div>
+                    <p class="success-prompt-prompt"> A la brevedad nos pondremos en contacto contigo para
+                        proporcionarte una cotización personalizada
+                        basada
+                        en tus preferencias.
+                    </p>
+                    <p class="success-prompt-prompt">Cualquier consulta no dudes en escribirnos:
+                        <br><br>
+                        elgustodelsaborcatering@gmail.com
+                    </p>
+                    <div class="success-button-container">
+                        <button type="button" class="btn btn-primary" id="botonVolverFormulario">Volver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>
-
 </body>
 
 </html>
