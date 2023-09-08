@@ -3,6 +3,7 @@ const contenedorFormulario = document.getElementById("contenedorFormulario");
 const formulario = document.getElementById("contact-form");
 const contenedorMensaje = document.getElementById("enviadoMsj");
 const botonVolverFormulario = document.getElementById("botonVolverFormulario");
+const spinner = document.getElementById("spinner");
 
 formulario.addEventListener("submit", async function (event) {
   event.preventDefault();
@@ -11,19 +12,23 @@ formulario.addEventListener("submit", async function (event) {
   const templateID = "template_bvnk0t5";
 
   try {
-    await emailjs.sendForm(serviceID, templateID, this);
     contenedorFormulario.classList.add("d-none");
-    contenedorMensaje.classList.remove("d-none");
-    contenedorMensaje.classList.add(
-      "container",
-      "d-flex",
-      "justify-content-center",
-      "align-items-center",
-      "fluid",
-      "p-0",
-      "m-0"
-    );
-    document.body.appendChild(contenedorMensaje);
+    spinner.classList.remove("d-none");
+    await emailjs.sendForm(serviceID, templateID, this);
+    setTimeout(() => {
+      spinner.classList.add("d-none");
+      contenedorMensaje.classList.remove("d-none");
+      contenedorMensaje.classList.add(
+        "container",
+        "d-flex",
+        "justify-content-center",
+        "align-items-center",
+        "fluid",
+        "p-0",
+        "m-0"
+      );
+      document.body.appendChild(contenedorMensaje);
+    }, 2000);
   } catch (error) {
     console.log("FAILED...", error);
   }
