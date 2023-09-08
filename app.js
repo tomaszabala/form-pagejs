@@ -29,6 +29,7 @@ formulario.addEventListener("submit", async function (event) {
       );
       document.body.appendChild(contenedorMensaje);
     }, 2000);
+    formulario.reset();
   } catch (error) {
     console.log("FAILED...", error);
   }
